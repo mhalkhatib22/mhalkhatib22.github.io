@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Me | Mohammad ALkhatib</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container-intro" style="min-height: auto; margin-bottom: 25px;">
+        <header>
+            <a href="index.html" class="logo">PORTFOLIO MOHAMMAD</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contact.html" class="active" style="color: var(--primary-color);">Contact Me</a></li>
+                </ul>
+            </nav>
+        </header>
+        <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 10px;">Get In Touch</h2>
+    </div>
+
+    <section class="details-section">
+        <div class="info-card contact-form-card" style="grid-column: 1 / -1;">
+            <div class="card-header">
+                <span class="icon">✉️</span>
+                <h3>Send a Message</h3>
+            </div>
+            
+            <form id="contactForm" style="display: flex; flex-direction: column; gap: 15px;">
+                <input type="text" id="fullName" placeholder="Full Name" style="padding: 12px; border-radius: 8px; border: none; background: rgba(255,255,255,0.1); color: white;">
+                
+                <input type="email" id="email" placeholder="Email Address" style="padding: 12px; border-radius: 8px; border: none; background: rgba(255,255,255,0.1); color: white;">
+                
+                <select id="country" style="padding: 12px; border-radius: 8px; border: none; background: rgba(255,255,255,0.1); color: #ccc;">
+                    <option value="">Select Country</option>
+                    <option value="Jordan">Jordan</option>
+                    <option value="Saudi Arabia">Saudi Arabia</option>
+                    <option value="Other">Other</option>
+                </select>
+
+                <textarea id="comments" placeholder="Your Comments" rows="5" style="padding: 12px; border-radius: 8px; border: none; background: rgba(255,255,255,0.1); color: white;"></textarea>
+                
+                <button type="submit" class="btn" style="border: none; cursor: pointer; width: fit-content;">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const fullName = document.getElementById('fullName').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const country = document.getElementById('country').value;
+            const comments = document.getElementById('comments').value.trim();
+
+            if (fullName === "" || email === "" || country === "" || comments === "") {
+                alert("Please fill in all fields before submitting.");
+            } else {
+                alert("Thank you, " + fullName + "! Your message has been submitted successfully.");
+                
+                this.reset();
+            }
+        });
+    </script>
+</body>
+</html>
