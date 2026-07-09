@@ -1,166 +1,807 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>163631 - Mohammad Hasan D'yab ALkhatib</title>
+    <title>Mohammad Hasan Alkhatib</title>
+    <meta
+      name="description"
+      content="Portfolio of Mohammad Hasan Alkhatib, Computer Information Systems Graduate."
+    />
+
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%230e1116%22/><text x=%2250%25%22 y=%2262%25%22 font-size=%2260%22 text-anchor=%22middle%22 fill=%22%23ff8a5c%22 font-family=%22monospace%22>&gt;_</text></svg>"
+    />
+
+    <meta property="og:type" content="profile" />
+    <meta
+      property="og:title"
+      content="Mohammad Hasan Alkhatib | Developer Portfolio"
+    />
+    <meta
+      property="og:description"
+      content="Computer Information Systems graduate building web and mobile applications. Explore skills, projects, and education."
+    />
+    <meta name="twitter:card" content="summary" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container-intro">
-      <header>
-        <a href="index.html" class="logo">MOHAMMAD</a>
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="contact.html">Contact Me</a></li>
-          </ul>
-        </nav>
-      </header>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="chrome">
+      <div class="dots" aria-hidden="true">
+        <span class="dot r"></span>
+        <span class="dot y"></span>
+        <span class="dot g"></span>
+      </div>
+      <button
+        class="current-file"
+        type="button"
+        aria-label="Open file explorer to navigate sections"
+      >
+        <svg
+          aria-hidden="true"
+          width="14"
+          height="14"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path
+            d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+          ></path>
+          <path d="M14 2v6h6"></path>
+        </svg>
+        <span data-current-file-label>profile.md</span>
+        <svg
+          class="chevron"
+          aria-hidden="true"
+          width="14"
+          height="14"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <polyline points="9 18 15 12 9 6"></polyline>
+        </svg>
+      </button>
+      <nav class="tabs" aria-label="File tabs">
+        <a href="#profile" class="tab active" role="tab" aria-selected="true"
+          >profile.md</a
+        >
+        <a href="#skills" class="tab" role="tab" aria-selected="false"
+          >skills.json</a
+        >
+        <a href="#projects" class="tab" role="tab" aria-selected="false"
+          >projects/</a
+        >
+        <a href="#education" class="tab" role="tab" aria-selected="false"
+          >education.log</a
+        >
+        <a href="#contact" class="tab" role="tab" aria-selected="false"
+          >contact.sh</a
+        >
+        <a href="#certificates" class="tab" role="tab" aria-selected="false"
+          >certificates/</a
+        >
+      </nav>
+      <button
+        class="menu-btn"
+        aria-label="Toggle File Explorer"
+        aria-expanded="false"
+      >
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </header>
 
-      <div class="content">
-        <div class="text">
-          <h2 class="name-highlight">Mohammad Hasan D'yab ALkhatib</h2>
-          <h3>Major: CIS | Fourth Year | SID: 163631</h3>
+    <div class="layout">
+      <div class="overlay" aria-hidden="true"></div>
+
+      <aside class="sidebar" aria-label="File Explorer">
+        <div class="label">explorer</div>
+        <nav aria-label="Main Navigation">
+          <a class="file active" href="#profile" aria-current="location">
+            <svg
+              class="file-icon"
+              aria-hidden="true"
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+              ></path>
+              <path d="M14 2v6h6"></path></svg
+            >profile<span class="ext">.md</span>
+          </a>
+          <a class="file" href="#skills" aria-current="false">
+            <svg
+              class="file-icon"
+              aria-hidden="true"
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+              ></path>
+              <path d="M14 2v6h6"></path></svg
+            >skills<span class="ext">.json</span>
+          </a>
+          <a class="file" href="#projects" aria-current="false">
+            <svg
+              class="file-icon"
+              aria-hidden="true"
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"
+              ></path></svg
+            >projects/
+          </a>
+          <a class="file" href="#education" aria-current="false">
+            <svg
+              class="file-icon"
+              aria-hidden="true"
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+              ></path>
+              <path d="M14 2v6h6"></path></svg
+            >education<span class="ext">.log</span>
+          </a>
+          <a class="file" href="#contact" aria-current="false">
+            <svg
+              class="file-icon"
+              aria-hidden="true"
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+              ></path>
+              <path d="M14 2v6h6"></path></svg
+            >contact<span class="ext">.sh</span>
+          </a>
+          <a class="file" href="#certificates" aria-current="false">
+            <svg
+              class="file-icon"
+              aria-hidden="true"
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+              ></path>
+              <path d="M14 2v6h6"></path></svg
+            >certificates/<span class="ext"></span>
+          </a>
+        </nav>
+      </aside>
+
+      <main class="main" id="main-content">
+        <section id="profile" class="hero" style="animation-delay: 0.1s">
+          <!-- <h4 class="comment">// profile.md</h4> -->
+          <img
+            src="photo_mo.jpeg"
+            alt="Mohammad Hasan Alkhatib"
+            class="profile-photo"
+          />
+          <h1>
+            Mohammad Hasan Alkhatib<span
+              class="cursor"
+              aria-hidden="true"
+            ></span>
+          </h1>
+          <div class="role">
+            Computer Information Systems Graduate from JUST
+          </div>
           <p>
-            Study Computer Information Systems (CIS) at the Faculty of Computer
-            and Information Technology (CIT) at Jordan University of Science and
-            Technology (JUST).
+            I'm a Junior Developer. I enjoy building responsive, scalable, and
+            user-friendly web applications. I completed the McKinsey Forward
+            program, where I strengthened my communication, teamwork,
+            adaptability, and problem-solving abilities.
           </p>
-          <div class="contact-action">
-            <a href="mailto:mhalkhatib22@cit.just.edu.jo" class="btn"
-              >Email Me</a
+          <div class="actions">
+            <a href="mailto:mhalkhatib22@cit.just.edu.jo" class="btn primary"
+              >Email me</a
+            >
+            <a
+              href="https://github.com/mhalkhatib22"
+              class="btn"
+              target="_blank"
+              rel="noopener noreferrer"
+              >View GitHub</a
+            >
+            <a href="Mohammad_Alkhatib_CV.pdf" class="btn" download
+              ><svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                style="margin-right: 8px"
+              >
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line></svg
+              >Download CV</a
             >
           </div>
-        </div>
-        <div class="img">
-          <!-- <img src="photo.png" alt="Professional Photo" /> -->
-           <img src="https://raw.githubusercontent.com/mhalkhatib22/mhalkhatib22.github.io/master/photo.png" alt="Professional Photo" />
-        </div>
-      </div>
+        </section>
+
+        <section id="skills" style="animation-delay: 0.2s">
+          <h2 class="comment">// skills.json Full Stack</h2>
+          <div
+            class="code-block json-block"
+            tabindex="0"
+            aria-label="Skills JSON block"
+          >
+            <div>{</div>
+            <div>
+              &nbsp;&nbsp;<span class="k">"languages"</span>: [<span class="s"
+                >"C"</span
+              >, <span class="s">"C++"</span>, <span class="s">"Java"</span>,
+              <span class="s">"Dart"</span>, <span class="s">"Python"</span>],
+            </div>
+            <div>
+              &nbsp;&nbsp;<span class="k">"frontend"</span>: [<span class="s"
+                >"HTML"</span
+              >, <span class="s">"CSS"</span>,
+              <span class="s">"JavaScript"</span>,
+              <span class="s">"React"</span>, <span class="s">"Flutter"</span>],
+            </div>
+            <div>
+              &nbsp;&nbsp;<span class="k">"backend"</span>: [<span class="s"
+                >"Node.js"</span
+              >, <span class="s">"PHP"</span>, <span class="s">"SQL"</span>],
+            </div>
+            <div>
+              &nbsp;&nbsp;<span class="k">"tools"</span>: [<span class="s"
+                >"Git"</span
+              >, <span class="s">"GitHub"</span>,
+              <span class="s">"VS Code"</span>,
+              <span class="s">"Cisco Packet Tracer"</span>]
+            </div>
+            <div>}</div>
+          </div>
+        </section>
+
+        <section id="projects" style="animation-delay: 0.3s">
+          <h2 class="comment">// projects/ — git log</h2>
+
+          <div class="commit">
+            <div class="hash">commit 7a1f9c2</div>
+            <h3>JUST Journal — graduation project</h3>
+            <p>
+              Web-based scientific journal platform: submission, peer review,
+              and publication workflow with role-based access. React.js,
+              Node.js, MySQL, built with Scrum.
+            </p>
+            <div class="stats">
+              <span class="add">+284</span> <span class="rm">−12</span>
+            </div>
+            <a
+              href="https://github.com/mhalkhatib22/React_JS-JUST_Journal"
+              aria-label="View JUST Journal repository"
+              >→ git clone JUST-Journal</a
+            >
+          </div>
+
+          <div class="commit">
+            <div class="hash">commit 3e08a41</div>
+            <h3>Kaggle competition — data mining</h3>
+            <p>
+              Data classification application using Python and machine learning;
+              generated and exported predictions.
+            </p>
+            <div class="stats">
+              <span class="add">+142</span> <span class="rm">−6</span>
+            </div>
+            <a
+              href="https://github.com/mhalkhatib22/Project-Kaggle-Competition"
+              aria-label="View Kaggle Competition repository"
+              >→ git clone Project-Kaggle-Competition</a
+            >
+          </div>
+        </section>
+        <section id="education" style="animation-delay: 0.4s">
+          <h2 class="comment">// education-Journey.log</h2>
+          <!-- <h6 class="comment">// Note: Most of the certifications listed below were completed as part of the requirements for university courses. Beyond fulfilling academic requirements, they enriched the course content with practical, industry-oriented learning and contributed to the development of essential professional, technical, and transferable skills applicable in real-world environments.</h6> -->
+          <div class="code-block" tabindex="0">
+            <div class="log-line">
+              <span class="ts">October 2022</span><span class="ok">&gt;</span>
+              <span class="msg"
+                >Enrolled — CIS, Jordan University of Science and
+                Technology</span
+              >
+            </div>
+            <div class="log-line">
+              <span class="ts">October-December 2024</span
+              ><span class="ok">✓</span>
+              <span class="msg">Forward — McKinsey.org</span>
+            </div>
+            <div class="log-line">
+              <span class="ts">July-September 2025</span
+              ><span class="ok">✓</span>
+              <span class="msg">Introduction to Modern AI — Cisco</span>
+            </div>
+            <div class="log-line">
+              <span class="ts">July-September 2025</span
+              ><span class="ok">✓</span>
+              <span class="msg">HTML Essentials — Cisco</span>
+            </div>
+            <div class="log-line">
+              <span class="ts">July-September 2025</span
+              ><span class="ok">✓</span>
+              <span class="msg">Python Essentials 1 — Cisco</span>
+            </div>
+            <div class="log-line">
+              <span class="ts">June-September 2025</span
+              ><span class="ok">✓</span>
+              <span class="msg">Flutter — The Hope International Company</span>
+            </div>
+            <div class="log-line">
+              <span class="ts">Apr-May 2026</span><span class="ok">✓</span>
+              <span class="msg">Introduction to Data Science — Cisco</span>
+            </div>
+            <div class="log-line">
+              <span class="ts">June 2026</span><span class="ok">✓</span>
+              <span class="msg">Azure Fundamentals — Microsoft</span>
+            </div>
+            <div class="log-line">
+              <span class="ts">June 2026</span><span class="ok">&gt;</span>
+              <span class="msg">Graduating — Grade/GPA 3.67, Excellent</span>
+            </div>
+          </div>
+          <h2 class="comment" style="padding-top: 15px">
+            // Note: Most of the above-mentioned certifications were obtained as
+            part of university course requirements. In addition to fulfilling
+            academic requirements, these certifications enriched course content
+            with industry-oriented, practical learning and contributed to the
+            development of essential professional and technical skills
+            applicable in real-world work environments.
+          </h2>
+        </section>
+
+        <section id="contact" style="animation-delay: 0.5s">
+          <h2 class="comment">// contact.sh</h2>
+          <div class="code-block shell" tabindex="0">
+            <div class="line">
+              <span class="prompt">~ $</span> <span class="cmd">./email</span> →
+              <a href="mailto:mhalkhatib22@cit.just.edu.jo"
+                >mhalkhatib22@cit.just.edu.jo</a
+              >
+              <button
+                class="copy-btn"
+                type="button"
+                data-copy="mhalkhatib22@cit.just.edu.jo"
+                aria-label="Copy email address to clipboard"
+              >
+                copy
+              </button>
+            </div>
+            <div class="line">
+              <span class="prompt">~ $</span> <span class="cmd">./call</span> →
+              <a href="tel:+962785288509">+962 78 528 8509</a>
+            </div>
+            <div class="line">
+              <span class="prompt">~ $</span>
+              <span class="cmd">./github</span> →
+              <a
+                href="https://github.com/mhalkhatib22"
+                target="_blank"
+                rel="noopener noreferrer"
+                >github.com/mhalkhatib22</a
+              >
+            </div>
+            <div class="line">
+              <span class="prompt">~ $</span>
+              <span class="cmd">./linkedin</span> →
+              <a
+                href="https://www.linkedin.com/in/mohammad-hasan-dyab-alkhatib-609a93280/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >https://www.linkedin.com/in/mohammad-hasan-dyab-alkhatib-609a93280/</a
+              >
+            </div>
+          </div>
+          <p class="copy-feedback" role="status" aria-live="polite"></p>
+        </section>
+
+        <section id="certificates" style="animation-delay: 0.45s">
+          <div class="comment">
+            // certificates/ — verified credentials & photos
+          </div>
+
+          <div class="gallery-grid">
+            <a
+              href="https://www.credly.com/badges/06d1caef-2a93-4359-bfc9-b4a9fbb20534/public_url"
+              class="gallery-card"
+              aria-label="View McKinsey Forward Certificate"
+            >
+              <img
+                src="certificates\Forward.jpg"
+                alt="McKinsey Forward Certificate"
+                class="gallery-img"
+                loading="lazy"
+              />
+              <div class="gallery-info">
+                <div class="gallery-title">mckinsey_forward.jpg</div>
+                <div class="gallery-meta">Dec 2024</div>
+              </div>
+            </a>
+
+            <a
+              href=""
+              class="gallery-card"
+              aria-label="View Python Essentials Certificate"
+            >
+              <img
+                src="certificates\flutter.jpg"
+                alt="flutter"
+                class="gallery-img"
+                loading="lazy"
+              />
+              <div class="gallery-info">
+                <div class="gallery-title">flutter.jpg</div>
+                <div class="gallery-meta">Sep 2025</div>
+              </div>
+            </a>
+
+            <a
+              href="https://www.credly.com/badges/659eb153-9ea6-4e98-8a09-5730de4a9c18"
+              class="gallery-card"
+              aria-label="View Graduation Photo"
+            >
+              <img
+                src="certificates\Azure_Fundamentals.jpg"
+                alt="Azure_Fundamentals"
+                class="gallery-img"
+                loading="lazy"
+              />
+              <div class="gallery-info">
+                <div class="gallery-title">Azure_Fundamentals.jpg</div>
+                <div class="gallery-meta">Jun 2026</div>
+              </div>
+            </a>
+            <a
+              href="https://www.credly.com/badges/9eff2399-235a-4d1f-af90-bbe9403af59b"
+              class="gallery-card"
+              aria-label="View Graduation Photo"
+            >
+              <img
+                src="certificates\Discovering_Entrepreneurship.jpg"
+                alt="Discovering_Entrepreneurship"
+                class="gallery-img"
+                loading="lazy"
+              />
+              <div class="gallery-info">
+                <div class="gallery-title">
+                  Discovering_Entrepreneurship.jpg
+                </div>
+                <div class="gallery-meta">Jan 2025</div>
+              </div>
+            </a>
+            <a
+              href="https://www.credly.com/badges/73009ed2-543b-4ef5-8f55-df10227dd2f7"
+              class="gallery-card"
+              aria-label="View Graduation Photo"
+            >
+              <img
+                src="certificates\Digital_awareness.jpg"
+                alt="Digital_awareness"
+                class="gallery-img"
+                loading="lazy"
+              />
+              <div class="gallery-info">
+                <div class="gallery-title">Digital_awareness.jpg</div>
+                <div class="gallery-meta">Apr 2025</div>
+              </div>
+            </a>
+            <a
+              href="https://www.credly.com/badges/e6d33ad2-8744-4d2c-94e2-6c315a217d1a"
+              class="gallery-card"
+              aria-label="View Graduation Photo"
+            >
+              <img
+                src="certificates\Python_Essentials_1.jpg"
+                alt="Python_Essentials_1"
+                class="gallery-img"
+                loading="lazy"
+              />
+              <div class="gallery-info">
+                <div class="gallery-title">Python_Essentials_1.jpg</div>
+                <div class="gallery-meta">Sep 2025</div>
+              </div>
+            </a>
+            <a
+              href="https://www.credly.com/badges/01d58d47-10b3-4470-91a0-412b1f83469a"
+              class="gallery-card"
+              aria-label="View Graduation Photo"
+            >
+              <img
+                src="certificates\Introduction_to_Modern_AI.jpg"
+                alt="Introduction_to_Modern_AI"
+                class="gallery-img"
+                loading="lazy"
+              />
+              <div class="gallery-info">
+                <div class="gallery-title">Introduction_to_Modern_AI.jpg</div>
+                <div class="gallery-meta">Sep 2025</div>
+              </div>
+            </a>
+            <a
+              href="https://www.credly.com/badges/c134f306-67b1-4243-b8d7-14b1c99e4c2d"
+              class="gallery-card"
+              aria-label="View Graduation Photo"
+            >
+              <img
+                src="certificates\HTML_Essentials.jpg"
+                alt="HTML_Essentials"
+                class="gallery-img"
+                loading="lazy"
+              />
+              <div class="gallery-info">
+                <div class="gallery-title">HTML_Essentials.jpg</div>
+                <div class="gallery-meta">Sep 2025</div>
+              </div>
+            </a>
+            <a
+              href="https://www.credly.com/badges/5024daa9-05ca-483c-8218-322a9fe39527"
+              class="gallery-card"
+              aria-label="View Graduation Photo"
+            >
+              <img
+                src="certificates\Introduction_to_Data_Science.jpg"
+                alt="Introduction_to_Data_Science"
+                class="gallery-img"
+                loading="lazy"
+              />
+              <div class="gallery-info">
+                <div class="gallery-title">
+                  Introduction_to_Data_Science.jpg
+                </div>
+                <div class="gallery-meta">May 2026</div>
+              </div>
+            </a>
+          </div>
+        </section>
+      </main>
     </div>
 
-    <section class="details-section">
-      <div class="info-card">
-        <div class="card-header">
-          <span class="icon">✨</span>
-          <h3>Key Soft Skills</h3>
-        </div>
-        <ul class="skills-list">
-          <li>Teamwork</li>
-          <li>Analytical Thinking</li>
-          <li>Problem-solving</li>
-          <li>Communication</li>
-          <li>Adaptability</li>
-        </ul>
-      </div>
+    <button class="back-to-top" type="button" aria-label="Back to top">
+      <svg
+        width="20"
+        height="20"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <line x1="12" y1="19" x2="12" y2="5"></line>
+        <polyline points="5 12 12 5 19 12"></polyline>
+      </svg>
+    </button>
 
-      <div class="info-card">
-        <div class="card-header">
-          <span class="icon">🛠️</span>
-          <h3>Language / freamwork</h3>
-        </div>
-        <div class="table-responsive">
-          <table class="styled-table">
-            <thead>
-              <tr>
-                <th>Language / freamwork</th>
-                <th>Official Link</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>C++</td>
-                <td>
-                  <a href="https://isocpp.org" target="_blank">isocpp.org</a>
-                </td>
-              </tr>
-              <tr>
-                <td>Python</td>
-                <td>
-                  <a href="https://www.python.org" target="_blank"
-                    >python.org</a
-                  >
-                </td>
-              </tr>
-              <tr>
-                <td>Java</td>
-                <td>
-                  <a href="https://www.java.com" target="_blank">java.com</a>
-                </td>
-              </tr>
-              <tr>
-                <td>Flutter</td>
-                <td>
-                  <a href="https://flutter.dev" target="_blank">flutter.dev</a>
-                </td>
-              </tr>
-              <tr>
-                <td>HTML,CSS and Javascript</td>
-                <td>
-                  <a href="https://www.w3schools.com/" target="_blank"
-                    >w3schools.com</a
-                  >
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+    <footer class="statusbar">
+      <div class="left">
+        <span aria-label="Current Branch">⑂ main</span>
+        <span class="encoding">UTF-8</span>
       </div>
+      <div class="right">
+        <span class="live">open to work</span>
+      </div>
+    </footer>
 
-      <div class="info-card">
-        <div class="card-header">
-          <span class="icon">📜</span>
-          <h3>Projects</h3>
-        </div>
-        <div class="table-responsive">
-          <table class="styled-table">
-            <thead>
-              <tr>
-                <th>Browse my recent Projects</th>
-                <th>Link</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>data mining</td>
-                <td>
-                  <a
-                    href="https://github.com/mhalkhatib22/Project-Kaggle-Competition"
-                    target="_blank"
-                    >Project-Kaggle-Competition</a
-                  >
-                </td>
-              </tr>
-              <tr>
-                <td>JUST Journal</td>
-                <td>
-                  <a
-                    href="https://github.com/mhalkhatib22/JUST-Journal"
-                    target="_blank"
-                    >JUST-Journal</a
-                  >
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // 0. Measure the sticky top chrome bar so the desktop sidebar can
+        // stick flush beneath it (see --chrome-height in the CSS). Re-run
+        // on resize since the bar's fluid spacing can change its height.
+        const chromeBar = document.querySelector(".chrome");
+        function setChromeHeightVar() {
+          if (chromeBar) {
+            document.documentElement.style.setProperty(
+              "--chrome-height",
+              `${chromeBar.offsetHeight}px`,
+            );
+          }
+        }
+        setChromeHeightVar();
+        window.addEventListener("resize", setChromeHeightVar);
 
-      <div class="vision-section info-card">
-        <div class="card-header">
-          <span class="icon">🚀</span>
-          <h3>Where Do I See Myself in 4 Years?</h3>
-        </div>
-        <p>
-          In the next four years, I see myself as a proficient Web Developer,
-          creating dynamic and user-friendly websites and applications. I aim to
-          master front-end and back-end technologies, and obtain certifications
-          in relevant web development frameworks. My goal is to build innovative
-          digital solutions that improve user experiences and contribute to the
-          growth of technology-driven organizations.
-        </p>
-      </div>
-    </section>
+        // 1. Mobile Menu Toggle
+        const menuBtn = document.querySelector(".menu-btn");
+        const currentFileBtn = document.querySelector(".current-file");
+        const currentFileLabel = document.querySelector(
+          "[data-current-file-label]",
+        );
+        const sidebar = document.querySelector(".sidebar");
+        const overlay = document.querySelector(".overlay");
+        const navLinks = document.querySelectorAll(".sidebar .file");
+
+        function toggleMenu() {
+          const isOpen = sidebar.classList.contains("open");
+          sidebar.classList.toggle("open");
+          overlay.classList.toggle("open");
+          menuBtn.setAttribute("aria-expanded", !isOpen);
+          document.body.style.overflow = isOpen ? "" : "hidden"; // Prevent background scrolling
+        }
+
+        menuBtn.addEventListener("click", toggleMenu);
+        overlay.addEventListener("click", toggleMenu);
+        // The current-file pill IS the mobile nav entry point — tapping it
+        // opens the same explorer as the hamburger button, just with a
+        // bigger, clearer target that also shows where you are.
+        if (currentFileBtn)
+          currentFileBtn.addEventListener("click", toggleMenu);
+
+        function setCurrentFileLabel(text) {
+          if (currentFileLabel) currentFileLabel.textContent = text;
+        }
+
+        // Close menu when a link is clicked (mobile), and mark it active
+        // immediately so the UI feels responsive instead of waiting on scroll.
+        navLinks.forEach((link) => {
+          link.addEventListener("click", () => {
+            navLinks.forEach((l) => {
+              l.classList.remove("active");
+              l.setAttribute("aria-current", "false");
+            });
+            link.classList.add("active");
+            link.setAttribute("aria-current", "location");
+            setCurrentFileLabel(link.textContent.trim());
+            if (window.innerWidth <= 900) toggleMenu();
+          });
+        });
+
+        // 2. Intersection Observer for Active State Highlighting
+        const sections = document.querySelectorAll("section");
+        const sidebarLinks = document.querySelectorAll(".sidebar .file");
+        const topTabs = document.querySelectorAll(".chrome .tab");
+
+        const observerOptions = {
+          root: null,
+          rootMargin: "-20% 0px -60% 0px", // Trigger when section is in top middle of screen
+          threshold: 0,
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              const currentId = entry.target.id;
+
+              // Update Sidebar
+              sidebarLinks.forEach((link) => {
+                link.classList.remove("active");
+                link.setAttribute("aria-current", "false");
+                if (link.getAttribute("href") === `#${currentId}`) {
+                  link.classList.add("active");
+                  link.setAttribute("aria-current", "location");
+                }
+              });
+
+              // Update Top Tabs
+              topTabs.forEach((tab) => {
+                tab.classList.remove("active");
+                tab.setAttribute("aria-selected", "false");
+                if (tab.getAttribute("href") === `#${currentId}`) {
+                  tab.classList.add("active");
+                  tab.setAttribute("aria-selected", "true");
+                  setCurrentFileLabel(tab.textContent.trim());
+                }
+              });
+            }
+          });
+        }, observerOptions);
+
+        sections.forEach((section) => observer.observe(section));
+
+        // 3. Copy-to-clipboard for contact details
+        const copyFeedback = document.querySelector(".copy-feedback");
+        document.querySelectorAll(".copy-btn").forEach((btn) => {
+          btn.addEventListener("click", async () => {
+            const value = btn.getAttribute("data-copy");
+            try {
+              await navigator.clipboard.writeText(value);
+              if (copyFeedback)
+                copyFeedback.textContent = `✓ Copied ${value} to clipboard`;
+              btn.textContent = "copied!";
+            } catch (err) {
+              if (copyFeedback)
+                copyFeedback.textContent = `Couldn't copy automatically — select the address and copy manually.`;
+            }
+            setTimeout(() => {
+              btn.textContent = "copy";
+              if (copyFeedback) copyFeedback.textContent = "";
+            }, 3000);
+          });
+        });
+
+        // 4. Back-to-top button
+        const backToTop = document.querySelector(".back-to-top");
+        if (backToTop) {
+          window.addEventListener(
+            "scroll",
+            () => {
+              backToTop.classList.toggle("visible", window.scrollY > 600);
+            },
+            { passive: true },
+          );
+          backToTop.addEventListener("click", () => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          });
+        }
+      });
+    </script>
   </body>
 </html>
